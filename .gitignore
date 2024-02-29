@@ -1,2 +1,2 @@
-./myenv
-/__py_cache__/
+/myenv
+*pyc
