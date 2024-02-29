@@ -1,15 +1,18 @@
 import cv2 as cv
 import numpy as np
-import matplotlib.pyplot as plt
+
 
 # Load the image
 image = cv.imread("rectangle.png")
 
+# Convert image to grayscale and apply Canny edge detection
 gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 edges = cv.Canny(gray, 50, 150)
 
 # Find contours in the edge-detected image with hierarchical retrieval
 contours, hierarchy = cv.findContours(edges, cv.RETR_CCOMP, cv.CHAIN_APPROX_SIMPLE)
+
+print(type(contours))
 
 # Create a copy of the original image to draw the contours on
 contour_image = image.copy()
@@ -50,5 +53,7 @@ for length, index in inner_contour_lengths[:4]:  # Only the first four contours
         2,
     )  # Red color
 
-plt.imshow(cv.cvtColor(contour_image, cv.COLOR_BGR2RGB))
-plt.show()
+
+cv.imshow("Result", cv.cvtColor(contour_image, cv.COLOR_BGR2RGB))
+cv.waitKey(0)
+cv.destroyAllWindows()
