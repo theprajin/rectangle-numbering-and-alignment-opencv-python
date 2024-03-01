@@ -6,4 +6,4 @@
 
 ### For running rectangle_alignment.py file:
 - Hit "python3 rectangle_alignment.py" on terminal if the OS is linux and "python rectangle_alignment.py" if the OS is Windows.
-- You will get result screen for each straightened rectangle so, press any key to exit the current result screen to the next result screen, and again press any key to exit the current result screen and so on.
+- You will get result screen for each straightened rectangle so, press any key to exit the current result screen and get to the next result screen, and again press any key to exit the result screen and so on until you exit the final result screen.
