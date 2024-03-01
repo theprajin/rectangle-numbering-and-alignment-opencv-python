@@ -12,7 +12,6 @@ edges = cv.Canny(gray, 50, 150)
 # Find contours in the edge-detected image with hierarchical retrieval
 contours, hierarchy = cv.findContours(edges, cv.RETR_CCOMP, cv.CHAIN_APPROX_SIMPLE)
 
-print(type(contours))
 
 # Create a copy of the original image to draw the contours on
 contour_image = image.copy()
