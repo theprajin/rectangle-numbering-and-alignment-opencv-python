@@ -1,4 +1,5 @@
 # Rectangle Numbering and Alignment using Python and OpenCV
+- First you need to create a virtual environment and install the required Python packages mentioned in the requirements.txt file.
 
 ### For running rectangle_numbering.py file:
 - Hit "python3 rectangle_numbering.py" on terminal if the OS is linux and "python rectangle_numbering.py" if the OS is Windows.
