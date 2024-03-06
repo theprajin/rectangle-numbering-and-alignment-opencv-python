@@ -55,4 +55,4 @@ for contour in contours:
 
 
 # Close all windows
-cv2.destroyAllWindows()
+cv.destroyAllWindows()
